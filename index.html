@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Mayfly</title>
+<style type="text/css">
+  
+  @font-face {
+    font-family:fortescue;
+    src: url(fonts/FortescuePro-Bold.otf);
+}
+
+  @font-face {
+    font-family:america;
+    src: url(fonts/GT-America-Trial-Ultra-Light.otf);
+}
+
+ @-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  background-color:#0073E9;
+  left:0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 3rem;
+  padding-left: 100%;
+}
+
+.ticker {
+  
+  display: inline-block;
+  height: 4rem;
+  line-height: 3rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 35s;
+  animation-duration: 35s;
+}
+.ticker__item {
+  font-family: america;
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+p {
+  color:white;
+  letter-spacing: 0.4px;
+  font-family: america;
+  font-size: 2.4rem;
+  width:75%;
+  height:100%;
+  margin:0 auto;
+  margin-top: 200px;
+  padding-bottom: 5rem;
+}
+
+.text{
+  font-family:fortescue; 
+  letter-spacing: 1px; 
+  color:black; 
+  font-size: 2.5rem;
+}
+img{
+  position: relative;
+  padding-top: 40px;
+  float: right;
+}
+
+body{
+  background-color: #4D4D4D;
+}
+
+
+
+
+
+
+@media (max-width: 620px) {
+  
+  img{
+    top: 70%;
+  right:0;
+  }
+
+p{
+  width:90%;
+  margin-top: 100px;
+font-size: 1.8rem;
+}
+.text{
+font-size:1.9rem;
+}
+}
+
+@media (max-width: 557px) {
+
+img{
+  top: 80%;
+  right:0;
+}
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+<div class="ticker-wrap">
+<div class="ticker">
+  <div class="ticker__item">Party invitations for your kids</div>
+  <div class="ticker__item">Fortune 500 corporate identities </div>
+  <div class="ticker__item">Poster for your school play </div>
+  <div class="ticker__item">Logo for your new business</div>
+  <div class="ticker__item">Something to stop your grandkids moaning</div>
+  <div class="ticker__item">Branding for your next brewing adventure</div>
+  <div class="ticker__item">Cake for your birthday</div>
+  <div class="ticker__item">Pamphlet for your AA meeting</div>
+  <div class="ticker__item">Poster for your lost cat</div>
+  <div class="ticker__item">Menus for your restaurant</div>
+  <div class="ticker__item">Business card for your dog Ricardo</div>
+  
+  
+
+</div>
+</div>
+
+<p>For 24 hours <span class='text'>Mayfly</span> will be working through live, community-contributed design briefs. We intend to shine a light on our creative process, help out around town, and study the affect of delirium on design. We will work on <span class="text">12 projects </span> spending a grand total of <span class="text">2 hours </span>on each.
+<br><br>
+If you would like to contribute a brief or have any questions, send us an email to <span class="text">hello@mayfly.studio</span>
+<br><br>
+Thanks for stopping by.
+<img src="img/icon.png"></p>
+</body>
+</html>
